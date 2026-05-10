@@ -61,7 +61,7 @@ export default function App() {
             <span></span>
           </div>
 
-          <p className="subtitulo">Com alegria, convidamos você para celebrar conosco nosso</p>
+          <p className="subtitulo">Com alegria, convidamos você para celebrar conosco o nosso</p>
           <Heart className="heart" fill="currentColor" />
           <h1>Casamento</h1>
 
@@ -208,7 +208,7 @@ export default function App() {
 
           <Presente
             imagem={luademel}
-            nome="Viagem de lua de mel
+            nome="Viagem de lua de mel.
             R$ 100,00.
             Chave pix: djgynn@gmail.com"
           />

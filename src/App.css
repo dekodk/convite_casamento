@@ -1,0 +1,402 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.site-casamento {
+  background: #f7f1e7;
+  color: #26351f;
+  font-family: Georgia, serif;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 18px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-conteudo {
+  max-width: 760px;
+  animation: subir 1.2s ease forwards;
+}
+
+.linha-topo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #b8923b;
+}
+
+.linha-topo span {
+  width: 110px;
+  height: 1px;
+  background: #c8a85a;
+}
+
+.subtitulo {
+  font-size: 22px;
+}
+
+.heart {
+  color: #b8923b;
+  animation: pulse 1.5s infinite;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 8vw, 76px);
+  color: #b8923b;
+  font-style: italic;
+  margin: 10px 0 30px;
+  line-height: 1;
+}
+
+.nomes-site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 35px;
+}
+
+.nomes-site p {
+  font-size: clamp(20px, 3.6vw, 42px);
+  font-style: italic;
+  margin: 0;
+  line-height: 1.08;
+}
+
+.nomes-site strong {
+  color: #b8923b;
+  font-size: 52px;
+  line-height: 1;
+}
+
+.nomes-site strong {
+  color: #b8923b;
+  font-size: 48px;
+}
+
+.data-hero {
+  margin: 35px auto;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.data-hero div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #c8a85a;
+  border-radius: 999px;
+  padding: 12px 24px;
+  color: #b8923b;
+  font-weight: bold;
+  background: rgba(255, 250, 241, 0.8);
+}
+
+.scroll-down,
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  border: none;
+  border-radius: 18px;
+  padding: 15px 24px;
+  background: linear-gradient(135deg, #b8923b, #d8bd73);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.scroll-down:hover,
+.botao:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(184, 146, 59, 0.35);
+}
+
+.secao {
+  padding: 80px 18px;
+  max-width: 960px;
+  margin: auto;
+}
+
+.secao-titulo {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.secao-titulo span {
+  color: #b8923b;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.secao-titulo h2 {
+  font-size: clamp(36px, 7vw, 58px);
+  color: #b8923b;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.secao-titulo p {
+  font-size: 18px;
+}
+
+.detalhes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-site,
+.card-site,
+.form-card {
+  background: rgba(255, 250, 241, 0.95);
+  border: 1px solid #c8a85a;
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(64, 48, 20, 0.12);
+}
+
+.info-site {
+  padding: 28px;
+  text-align: center;
+}
+
+.info-icone {
+  color: #b8923b;
+}
+
+.info-site h3,
+.card-header h2 {
+  color: #b8923b;
+  font-size: 28px;
+}
+
+.info-site p,
+.card-site p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.card-site,
+.form-card {
+  padding: 32px;
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #b8923b;
+}
+
+.card-site h3 {
+  font-size: 26px;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  border: 1px solid #d9c99e;
+  border-radius: 16px;
+  padding: 15px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+.form-card .botao,
+.card-site .botao {
+  width: 100%;
+}
+
+.desativado {
+  opacity: 0.6;
+}
+
+footer {
+  padding: 40px 18px;
+  text-align: center;
+  color: #b8923b;
+}
+
+.decor {
+  position: absolute;
+  font-size: 150px;
+  opacity: 0.09;
+  color: #b8923b;
+  animation: flutuar 6s ease-in-out infinite;
+}
+
+.decor-1 {
+  top: 20px;
+  left: 20px;
+}
+
+.decor-2 {
+  bottom: 20px;
+  right: 20px;
+}
+
+.animar {
+  animation: subir 1s ease both;
+}
+
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(38px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes flutuar {
+  50% {
+    transform: translateY(-20px) rotate(4deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  .detalhes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .secao {
+    padding: 60px 16px;
+  }
+
+  .card-site,
+  .form-card,
+  .info-site {
+    padding: 24px;
+  }
+
+  .linha-topo span {
+    width: 70px;
+  }
+
+  .nomes-site p {
+  font-size: 40px;
+}
+
+.hero h1 {
+  margin-bottom: 24px;
+}
+}
+.info-grande {
+  min-height: 230px;
+  justify-content: center;
+}
+
+.texto-grande {
+  font-size: 42px !important;
+  font-weight: bold;
+  color: #26351f;
+}
+
+.localizacao-destaque {
+  margin-top: 22px;
+  background: rgba(255, 250, 241, 0.95);
+  border: 1px solid #c8a85a;
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(64, 48, 20, 0.12);
+  padding: 40px;
+  text-align: center;
+}
+
+.localizacao-destaque h3 {
+  color: #b8923b;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.localizacao-destaque h4 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.localizacao-destaque p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.localizacao-destaque .botao {
+  width: 100%;
+}
+
+.presentes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.presente-card {
+  background: rgba(255, 250, 241, 0.95);
+  border: 1px solid #c8a85a;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 35px rgba(64, 48, 20, 0.12);
+  transition: 0.35s;
+}
+
+.presente-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 45px rgba(64, 48, 20, 0.2);
+}
+
+.presente-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.presente-info {
+  padding: 18px;
+  text-align: center;
+}
+
+.presente-info h3 {
+  color: #26351f;
+  font-size: 22px;
+  margin: 0;
+}

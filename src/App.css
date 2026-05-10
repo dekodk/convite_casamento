@@ -65,6 +65,7 @@ body {
   align-items: center;
   gap: 6px;
   margin-bottom: 35px;
+  font-family: 'Great Vibes',cursive;
 }
 
 .nomes-site p {
@@ -399,4 +400,21 @@ footer {
   color: #26351f;
   font-size: 22px;
   margin: 0;
+}
+
+.mensagem-detalhes {
+  background: rgba(255, 250, 241, 0.95);
+  border: 1px solid #c8a85a;
+  border-radius: 24px;
+  padding: 28px;
+  margin-bottom: 35px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(64, 48, 20, 0.1);
+}
+
+.mensagem-detalhes p {
+  margin: 14px 0;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #26351f;
 }

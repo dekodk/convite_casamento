@@ -63,7 +63,7 @@ export default function App() {
 
           <p className="subtitulo">Com alegria, convidamos você para celebrar conosco o nosso</p>
           <Heart className="heart" fill="currentColor" />
-          <h1>Casamento</h1>
+          <h2>Casamento</h2>
 
           <div className="nomes-site">
             <p>{dados.noivo}</p>
@@ -90,10 +90,23 @@ export default function App() {
       </section>
 
       <section className="secao detalhes" id="detalhes">
-        <div className="secao-titulo animar">
-          <span>Nosso grande dia</span>
+        <div className="mensagem-detalhes animar">
+          <h2>Nosso grande dia</h2>
           <h2>Detalhes do Evento</h2>
           <p>Sua presença tornará esse momento ainda mais especial.</p>
+          <p>
+            Serviremos água, sucos e refrigerantes!
+          </p>
+
+          <p>
+            Quem quiser trazer sua bebida alcoólica de preferência,
+            poderá ficar à vontade!
+          </p>
+
+          <p>
+            Crianças: levar trajes de banho,
+            piscina disponível!
+          </p>
         </div>
 
         <div className="localizacao-destaque animar">
